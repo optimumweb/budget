@@ -208,6 +208,7 @@
 		<link rel='stylesheet' id='budget-css' href='budget.css' type='text/css' media='all' />
 		
 		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=1.7.1'></script>
+		<script type='text/javascript' src='budget.js'></script>
 		
 	</head>
 	
