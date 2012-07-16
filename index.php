@@ -229,7 +229,7 @@
 	
 		<div id="budget-wrap">
 	
-			<h1>Online Budget Tool</h1>
+			<h1>Budget en ligne</h1>
 			
 			<table width="100%" cellpadding="5" cellspacing="0" border="0">
 			
