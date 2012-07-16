@@ -232,7 +232,7 @@
 	
 			<h1>Budget en ligne</h1>
 			
-			<table width="100%" cellpadding="5" cellspacing="0" border="0">
+			<table id="budget-table" width="100%" cellpadding="5" cellspacing="0" border="0">
 			
 				<thead>
 				

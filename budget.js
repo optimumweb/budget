@@ -58,14 +58,38 @@ function refresh() {
 	
 }
 
+jQuery.fn.budget = function() {
+
+	return this.each(function() {
+	
+		var $this = $(this);
+		var $theads = $this.find('.thead');
+		var $tbodys = $this.find('.tbody');
+		var $fields = $this.find('.field');
+		var $inputs = $fields.find('input, select');
+		
+		refresh();
+		
+		$inputs.bind('change', refresh);
+		
+		$tbodys.addClass('hidden').first().removeClass('hidden');
+		
+		$theads.click(function(e) {
+			
+			e.preventDefault();
+			
+			var tbody = $(this).data('for'), $tbody = $this.find( tbody );
+			
+			$tbody.toggleClass('hidden');
+			
+		});
+		
+	});
+	
+};
+
 $(document).ready(function() {
 	
-	var $field = $('.field');
-	var $inputs = $field.find('input, select');
+	$('#budget-table').budget();
 	
-	refresh();
-	
-	$inputs.bind('change', refresh);
-
-
 });

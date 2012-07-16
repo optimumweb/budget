@@ -11,84 +11,84 @@ body {
 	h1 {
 		text-align: center;
 	}
+}
+
+#budget-table {
+	thead {
+		th, td {
+			padding: 0.25em 1em;
+			font-weight: bold;
+		}
 	
-	table {
-		thead {
-			th, td {
-				padding: 0.25em 1em;
-				font-weight: bold;
-			}
+		th {
+			white-space: nowrap;
+			background: #dcf0c8;
+			
+			&.empty { background: none; }
+		}
 		
-			th {
-				white-space: nowrap;
-				background: #dcf0c8;
-				
-				&.empty { background: none; }
-			}
-			
-			td {
-				color: #fff;
-				text-transform: uppercase;
-				background: #0f3c69;
-			}
+		td {
+			color: #fff;
+			text-transform: uppercase;
+			background: #0f3c69;
 		}
-	
-		tbody {
-			tr.field {
-				&.odd { background: #f6f6f6; }
-				&.even { background: #e6e6e6; }
-				
-				&:hover { background: #d7e6f0; }
-				
-				&.sub td.label {
-					padding-left: 2em;
-					font-weight: normal;
-				}
-				
-				.label {
-					font-weight: bold;
-				
-					.description {
-						display: block;
-						font-size: 0.85em;
-						font-style: italic;
-						font-weight: normal;
-						color: #555;
-					}
-				}
-				
-				.amount input {
-					width: 60px;
-					text-align: right;
-				}
-				
-				.monthly-total {
-					text-align: right;
-				}
-				
-				.percentage {
-					text-align: right;
-				}
+	}
+
+	tbody {
+		tr.field {
+			&.odd { background: #f6f6f6; }
+			&.even { background: #e6e6e6; }
+			
+			&:hover { background: #d7e6f0; }
+			
+			&.sub td.label {
+				padding-left: 2em;
+				font-weight: normal;
 			}
 			
-			tr.total {
+			.label {
 				font-weight: bold;
-				background: #f5ebb9;
-				
-				.monthly-total {
-					text-align: right;
+			
+				.description {
+					display: block;
+					font-size: 0.85em;
+					font-style: italic;
+					font-weight: normal;
+					color: #555;
 				}
 			}
 			
-			td {
-				padding: 0.25em 1em;
-				
-				&.category-label {
-					font-weight: bold;
-					background: #c6c6c6;
-				}
+			.amount input {
+				width: 60px;
+				text-align: right;
 			}
 			
+			.monthly-total {
+				text-align: right;
+			}
+			
+			.percentage {
+				text-align: right;
+			}
 		}
+		
+		tr.total {
+			font-weight: bold;
+			background: #f5ebb9;
+			
+			.monthly-total {
+				text-align: right;
+			}
+		}
+		
+		td {
+			padding: 0.25em 1em;
+			
+			&.category-label {
+				font-weight: bold;
+				background: #c6c6c6;
+			}
+		}
+		
 	}
 }
