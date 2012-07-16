@@ -222,7 +222,7 @@
 			
 				<thead>
 				
-					<th>Cat&eacute;gorie</th>
+					<th>&nbsp;</th>
 					<th>Montant</th>
 					<th>P&eacute;riode</th>
 					<th>Montant annuel</th>
