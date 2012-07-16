@@ -74,20 +74,20 @@
 			)
 		),
 		'savings' => array(
-			'label' => "&eacute;pargne",
+			'label' => "&Eacute;pargne",
 			'categories' => array(
 				array(
 					'label' => false,
 					'fields' => array(
 						array( 'label' => "R&eacute;serve pour impr&eacute;vus", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "&eacute;conomies", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "&eacute;pargne retraite", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "&eacute;pargne habitation", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "&eacute;pargne &eacute;tudes", 'description' => "", 'amount' => 0, 'period' => 12 ),
+						array( 'label' => "&Eacute;conomies", 'description' => "", 'amount' => 0, 'period' => 12 ),
+						array( 'label' => "&Eacute;pargne retraite", 'description' => "", 'amount' => 0, 'period' => 12 ),
+						array( 'label' => "&Eacute;pargne habitation", 'description' => "", 'amount' => 0, 'period' => 12 ),
+						array( 'label' => "&Eacute;pargne &eacute;tudes", 'description' => "", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Placements", 'description' => "CPG, fonds communs de placement, actions en bourse, etc.", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "&eacute;pargne vacances", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "&eacute;pargne voyage", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "&eacute;pargne voiture", 'description' => "", 'amount' => 0, 'period' => 12 ),
+						array( 'label' => "&Eacute;pargne vacances", 'description' => "", 'amount' => 0, 'period' => 12 ),
+						array( 'label' => "&Eacute;pargne voyage", 'description' => "", 'amount' => 0, 'period' => 12 ),
+						array( 'label' => "&Eacute;pargne voiture", 'description' => "", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Autres", 'description' => "", 'amount' => 0, 'period' => 12 )
 					)
 				)
@@ -103,7 +103,7 @@
 						array( 'label' => "Taxes municipales", 'description' => "", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Taxes scolaires", 'description' => "", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Taxes d'eau", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "&eacute;lectricit&eacute;", 'description' => "", 'amount' => 0, 'period' => 12 ),
+						array( 'label' => "&Eacute;lectricit&eacute;", 'description' => "", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Chauffage", 'description' => "", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Syst&egrave;me d'alarme", 'description' => "", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Am&eacute;nagement et entretien", 'description' => "", 'amount' => 0, 'period' => 12 ),
@@ -145,7 +145,7 @@
 				array(
 					'label' => "Alimentation",
 					'fields' => array(
-						array( 'label' => "&eacute;picerie", 'description' => "", 'amount' => 0, 'period' => 12 ),
+						array( 'label' => "&Eacute;picerie", 'description' => "", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Restaurant", 'description' => "", 'amount' => 0, 'period' => 12 )
 					)
 				),

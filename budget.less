@@ -13,7 +13,9 @@ body {
 	
 	table {
 		thead {
-		
+			th {
+				white-space: nowrap;
+			}
 		}
 	
 		tbody {
@@ -21,6 +23,10 @@ body {
 			tr.field {
 				&.odd { background: #f6f6f6; }
 				&.even { background: #e6e6e6; }
+				
+				&.sub td.label {
+					padding-left: 1.5em;
+				}
 			}
 			
 			td {
@@ -30,6 +36,10 @@ body {
 					color: #fff;
 					font-weight: bold;
 					background: #0f3c69;
+				}
+				
+				&.category-label {
+					background: #5fa5e6;
 				}
 			}
 			
