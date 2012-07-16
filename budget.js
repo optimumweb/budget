@@ -65,7 +65,7 @@ $(document).ready(function() {
 	
 	refresh();
 	
-	$inputs.bind('change', 'refresh');
+	$inputs.bind('change', refresh);
 
 
 });
