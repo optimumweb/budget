@@ -78,7 +78,7 @@ jQuery.fn.budget = function() {
 			
 			e.preventDefault();
 			
-			var tbody = $(this).data('for'), $tbody = $this.find( tbody );
+			var tbody = $(this).data('for'), $tbody = $this.find( '#' + tbody );
 			
 			$tbody.toggleClass('hidden');
 			
