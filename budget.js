@@ -13,13 +13,13 @@ $(document).ready(function() {
 			
 		});
 		
-		return total;
+		return total.toFixed(2);
 		
 	};
 	
 	function calcSectionAnnualTotal($section) {
 		
-		$section.find('.total').find('.annual-total').text( '$' + sectionAnnualTotal( $section ) );
+		$section.find('.field.total').find('.annual-total').text( '$' + sectionAnnualTotal( $section ) );
 		
 	}
 	
