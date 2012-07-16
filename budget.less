@@ -27,14 +27,15 @@ body {
 			&.empty { background: none; }
 		}
 		
-		td {
-			color: #fff;
-			text-transform: uppercase;
-			background: #0f3c69;
-		}
-		
 		&.section-title {
 			cursor: pointer;
+			color: #fff;
+			text-transform: uppercase;
+			background-color: #0f3c69;
+			
+			&[data-for="spending"] {
+				background-color: #dc0a1e;
+			}
 		
 			.section-label {
 				font-size: 1.1em;
