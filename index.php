@@ -244,13 +244,13 @@
 				</thead>
 				
 				<?php foreach ( $budget as $section_key => $section ) : ?>
-				
+					
+					<tr>
+						<td class="section-label" colspan="5"><?php echo $section['label']; ?></td>
+					</tr>
+					
 					<tbody id="<?php echo $section_key; ?>" class="section">
-						
-						<tr>
-							<td class="section-label" colspan="5"><?php echo $section['label']; ?></td>
-						</tr>
-						
+
 						<?php foreach ( $section['categories'] as $category ) : ?>
 						
 							<?php if ( $category['label'] ) : ?>
