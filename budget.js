@@ -40,9 +40,12 @@ $(document).ready(function() {
 	$('.amount').focusout(function() {
 		
 		var $this = $(this);
+		var $input = $this.find('input');
 		var $field = $this.parent('.field');
 		
-		$this.find('input').val( $this.find('input').val().toFixed(2) );
+		var amount = parseFloat( $input.val() );
+		
+		$input.val(  amount.toFixed(2) );
 		
 		calcAnnualTotal( $field );
 		
