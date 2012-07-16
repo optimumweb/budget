@@ -43,14 +43,14 @@
 					'label' => false,
 					'fields' => array(
 						array( 'label' => "R&eacute;mun&eacute;ration nette d'un emploi", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Revenu net d’un travail autonome", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Revenu d’appoint net", 'description' => "deuxi&egrave;me emploi, revenu secondaire", 'amount' => 0, 'period' => 12 ),
+						array( 'label' => "Revenu net d'un travail autonome", 'description' => "", 'amount' => 0, 'period' => 12 ),
+						array( 'label' => "Revenu d'appoint net", 'description' => "deuxi&egrave;me emploi, revenu secondaire", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Commissions", 'description' => "", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Bonus", 'description' => "bonus et primes nets reçus dans le cadre d'un emploi", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Pourboires", 'description' => "", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Prestations gouvernementales", 'description' => "", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Bourses", 'description' => "bourse d'&eacute;tude, bourse au rendement, etc.", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Remboursement d'imp&ocirc;t", 'description' => "retour annuel d’imp&ocirc;t suite &agrave; la production de la d&eacute;claration de revenus", 'amount' => 0, 'period' => 12 ),
+						array( 'label' => "Remboursement d'imp&ocirc;t", 'description' => "retour annuel d'imp&ocirc;t suite &agrave; la production de la d&eacute;claration de revenus", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Remboursement de taxes de ventes", 'description' => "", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Revenus nets de location", 'description' => "", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Revenus de placements", 'description' => "revenus d'int&eacute;rêts, dividendes, gains en capital, etc.", 'amount' => 0, 'period' => 12 ),
@@ -121,7 +121,7 @@
 				array(
 					'label' => "Transport",
 					'fields' => array(
-						array( 'label' => "Paiement automobile", 'description' => "paiement d’un prêt automobile ou de la location d’un v&eacute;hicule", 'amount' => 0, 'period' => 12 ),
+						array( 'label' => "Paiement automobile", 'description' => "paiement d'un prêt automobile ou de la location d'un v&eacute;hicule", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Transport public", 'description' => "taxi, train, m&eacute;tro, autobus, etc.", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "D&eacute;penses auto - Essence", 'description' => "", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "D&eacute;penses auto - Entretiens et r&eacute;parations", 'description' => "", 'amount' => 0, 'period' => 12 ),
@@ -157,14 +157,14 @@
 				array(
 					'label' => "Loisirs et &eacute;ducation",
 					'fields' => array(
-						array( 'label' => "Frais de scolarit&eacute;", 'description' => "livres, mat&eacute;riel scolaire, activit&eacute;s parascolaires, frais de l’institution d’enseignement, etc.", 'amount' => 0, 'period' => 12 ),
+						array( 'label' => "Frais de scolarit&eacute;", 'description' => "livres, mat&eacute;riel scolaire, activit&eacute;s parascolaires, frais de l'institution d'enseignement, etc.", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Sports et loisirs", 'description' => "passe-temps, spectacles, cin&eacute;ma, location de vid&eacute;os, livres et revues, &eacute;quipement de sports, etc.", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Vacances", 'description' => "avion, h&ocirc;tel, restaurant, &eacute;quipement, souvenirs, camping, assurance voyage, etc.", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Abonnements", 'description' => "journaux, revues, club sportif, etc.", 'amount' => 0, 'period' => 12 )
 					)
 				),
 				array(
-					'label' => "Remboursement d’emprunts",
+					'label' => "Remboursement d'emprunts",
 					'fields' => array(
 						array( 'label' => "Carte de cr&eacute;dit", 'description' => "", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Marge de cr&eacute;dit", 'description' => "", 'amount' => 0, 'period' => 12 ),
