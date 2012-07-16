@@ -51,7 +51,7 @@ $(document).ready(function() {
 		
 		var $this = $(this);
 		var $field = $this.parent('.field');
-		var $amount = $field.find('.amount'), amount = parseFloat( $amount.val() );
+		var $amount = $field.find('.amount'), amount = parseFloat( $amount.find('input').val() );
 		var $section = $field.parent('.section');
 		
 		$amount.find('input').val(  amount.toFixed(2) );
