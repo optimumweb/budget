@@ -215,7 +215,7 @@
 		
 			<thead>
 			
-				<th>Cat&eacute;gory</th>
+				<th>Cat&eacute;gorie</th>
 				<th>Montant</th>
 				<th>P&eacute;riode</th>
 				<th>Montant annuel</th>
