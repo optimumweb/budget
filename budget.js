@@ -68,7 +68,7 @@ $(document).ready(function() {
 		
 	});
 	
-	$field.find('.period > select').change(function() {
+	$field.find('.period').find('select').change(function() {
 		
 		var $field = $(this).parent('.field');
 		
