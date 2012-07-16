@@ -84,7 +84,7 @@ $(document).ready(function() {
 	
 		var $this = $(this);
 		
-		calcField( $field ).calcAll();
+		calcAll( $field );
 		
 	});
 	
