@@ -17,7 +17,7 @@ function sectionAnnualTotal($section) {
 
 function calcSectionAnnualTotal($section) {
 	
-	$section.find('.field.total').find('.annual-total').text( '$' + sectionAnnualTotal( $section ).toFixed(2) );
+	$section.find('.field.total').find('.annual-total').text( sectionAnnualTotal( $section ).toFixed(2) );
 	
 }
 
@@ -29,7 +29,7 @@ function calcAnnualTotal($field) {
 	
 	var annualTotal = amount * period;
 	
-	$annualTotal.text( '$' + annualTotal.toFixed(2) );
+	$annualTotal.text( annualTotal.toFixed(2) );
 	
 }
 
