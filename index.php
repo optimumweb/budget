@@ -14,8 +14,7 @@
 	$i = 0;
 
 	function make_row($field, $class = null) {
-		global $periods, $i;
-		$i++;
+		global $periods, $i++;
 	?>
 		<tr class="field <?php echo $class; ?> <?php ( $i % 2 ) ? 'even' : 'odd'; ?>">
 			<td class="label">
