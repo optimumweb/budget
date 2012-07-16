@@ -246,7 +246,7 @@
 				
 				<?php foreach ( $budget as $section_key => $section ) : ?>
 					
-					<thead class="section-title">
+					<thead for="<?php echo $section_key; ?>" class="section-title">
 						<tr>
 							<td class="section-label" colspan="5"><?php echo $section['label']; ?></td>
 						</tr>
