@@ -28,6 +28,8 @@ function calcSection($section) {
 		
 	};
 	
+	return this;
+	
 }
 
 function calcField($field) {
