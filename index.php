@@ -222,7 +222,7 @@
 			
 				<thead>
 				
-					<th>&nbsp;</th>
+					<th class="hidden">&nbsp;</th>
 					<th>Montant</th>
 					<th>P&eacute;riode</th>
 					<th>Montant annuel</th>
