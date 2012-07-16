@@ -20,8 +20,8 @@
 		array_merge( array(
 			'amount' => '0.00',
 			'period' => '12',
-			'annual_total' => '0.00 $',
-			'percentage' => '0.0 %'
+			'annual_total' => '$0.00',
+			'percentage' => '0.0%'
 		), $field );
 		
 	?>
