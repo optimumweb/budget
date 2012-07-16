@@ -25,7 +25,7 @@ $(document).ready(function() {
 		
 		var annualTotal = amount * period;
 		
-		$annualTotal.text( annualTotal );
+		$annualTotal.text( annualTotal ).toFixed(2);
 		
 	};
 	
