@@ -16,7 +16,7 @@
 	function make_row($field, $class = null) {
 		global $periods, $i;
 	?>
-		<tr class="field <?php echo $class; ?> <?php ( $i++ % 2 == 0 ) ? 'even' : 'odd'; ?>">
+		<tr class="field <?php echo $class; ?> <?php echo ( $i++ % 2 == 0 ) ? 'even' : 'odd'; ?>">
 			<td class="label">
 				<?php echo $field['label']; ?> <span class="description"><?php echo $field['description']; ?></span>
 			</td>
