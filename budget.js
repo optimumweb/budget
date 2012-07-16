@@ -39,10 +39,13 @@ function calcMonthlyTotal($field) {
 function calcPercentage($field) {
 	
 	var $percentage = $field.find('.percentage');
+	var $monthlyTotal = $field.find('.monthly-total'), monthlyTotal = parseFloat( $monthlyTotal.text() );
 	var $section = $field.parent('.section');
 	
 	var sectionMonthlyTotal = getSectionMonthlyTotal( $section );
-	var percentage = 
+	var percentage = monthlyTotal / sectionMonthlyTotal;
+	
+	$percentage.text( percentage.toFixed(1) );
 	
 }
 
