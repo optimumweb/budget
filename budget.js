@@ -35,10 +35,10 @@ function calcAnnualTotal($field) {
 
 $(document).ready(function() {
 
-	$('.field, .total').hide();
+	$('.field, .total, .category-label').hide();
 	
 	$('.section-label').click(function() {
-		$(this).parent('.section').find('.field, .total').slideDown();
+		$(this).parent('.section').find('.field, .total, .category-label').slideDown();
 	});
 	
 	$('.field').each(function() {
