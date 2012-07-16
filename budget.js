@@ -35,6 +35,19 @@ function calcAnnualTotal($field) {
 	
 }
 
+function calcField($field) {
+	
+	var $amount = $field.find('.amount'), amount = parseFloat( $amount.find('input').val() );
+	var $section = $field.parent('.section');
+	
+	$amount.find('input').val( amount.toFixed(2) );
+	
+	calcAnnualTotal( $field );
+	
+	calcSectionAnnualTotal( $section );
+	
+}
+
 $(document).ready(function() {
 	
 	var $field = $('.field');
@@ -47,18 +60,19 @@ $(document).ready(function() {
 		
 	});
 	
-	$field.find('.amount, .period').focusout(function() {
+	$field.find('.amount').focusout(function() {
 		
-		var $this = $(this);
-		var $field = $this.parent('.field');
-		var $amount = $field.find('.amount'), amount = parseFloat( $amount.find('input').val() );
-		var $section = $field.parent('.section');
+		var $field = $(this).parent('.field');
 		
-		$amount.find('input').val(  amount.toFixed(2) );
+		calcField( $field );
 		
-		calcAnnualTotal( $field );
+	});
+	
+	$field.find('.period > select').change(function() {
 		
-		calcSectionAnnualTotal( $section );
+		var $field = $(this).parent('.field');
+		
+		calcField( $field );
 		
 	});
 
