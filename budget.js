@@ -87,9 +87,3 @@ jQuery.fn.budget = function() {
 	});
 	
 };
-
-$(document).ready(function() {
-	
-	$('#budget-table').budget();
-	
-});
