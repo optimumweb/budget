@@ -232,7 +232,7 @@
 				
 				<?php foreach ( $budget as $section_key => $section ) : ?>
 				
-					<tbody class="<?php echo $section_key; ?>">
+					<tbody id="<?php echo $section_key; ?>" class="section">
 						
 						<tr>
 							<td class="section-label" colspan="5"><?php echo $section['label']; ?></td>
