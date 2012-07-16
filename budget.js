@@ -11,7 +11,7 @@ function sectionAnnualTotal($section) {
 		
 	});
 	
-	return total;
+	return parseFloat( total );
 	
 }
 
