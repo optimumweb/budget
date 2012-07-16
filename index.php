@@ -17,7 +17,7 @@
 		
 		global $periods, $i;
 		
-		array_merge( array(
+		$field = array_merge( array(
 			'amount' => '0.00',
 			'period' => '12',
 			'annual_total' => '$0.00',
