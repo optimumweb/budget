@@ -57,6 +57,10 @@ function calcField($field) {
 		percentage = newPercentage;
 	};
 	
+	this.calcAll = function() {
+		return calcField( $field ).refreshAmount().calcMonthlyTotal().calcPercentage();
+	};
+	
 }
 
 $(document).ready(function() {
@@ -65,10 +69,10 @@ $(document).ready(function() {
 	var $inputs = $field.find('input, select');
 	
 	$field.each(function() {
-		
+	
 		var $this = $(this);
 		
-		calcMonthlyTotal( $this );
+		calcField( $field ).calcAll();
 		
 	});
 	
@@ -78,7 +82,7 @@ $(document).ready(function() {
 		var $field = $this.parent('.field');
 		var $section = $field.parent('.section');
 		
-		calcField( $field ).refreshAmount().calcMonthlyTotal().calcPercentage();
+		calcField( $field ).calcAll();
 		
 		calcSection( $section ).calcMonthlyTotal();
 		
