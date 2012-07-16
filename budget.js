@@ -1,13 +1,13 @@
-function sectionAnnualTotal($section) {
+function getSectionMonthlyTotal($section) {
 	
 	var total = 0;
 	
 	$section.find('.field').each(function() {
 		
 		var $this = $(this);
-		var $annualTotal = $this.find('.annual-total');
+		var $monthlyTotal = $this.find('.monthly-total');
 		
-		total = total + parseFloat( $annualTotal.text() );
+		total = total + parseFloat( $monthlyTotal.text() );
 		
 	});
 	
@@ -15,23 +15,34 @@ function sectionAnnualTotal($section) {
 	
 }
 
-function calcSectionAnnualTotal($section) {
+function calcSectionMonthlyTotal($section) {
 	
-	var $sectionAnnualTotal = $section.find('.total').find('.annual-total');
+	var sectionMonthlyTotal = getSectionMonthlyTotal( $section );
+	var $sectionMonthlyTotal = $section.find('.total').find('.monthly-total');
 	
-	$sectionAnnualTotal.text( sectionAnnualTotal( $section ).toFixed(2) );
+	$sectionMonthlyTotal.text( sectionMonthlyTotal.toFixed(2) );
 	
 }
 
-function calcAnnualTotal($field) {
+function calcMonthlyTotal($field) {
 	
 	var $amount = $field.find('.amount'), amount = parseFloat( $amount.find('input').val() );
 	var $period = $field.find('.period'), period = parseFloat( $period.find('select').val() );
-	var $annualTotal = $field.find('.annual-total');
+	var $monthlyTotal = $field.find('.monthly-total');
 	
-	var annualTotal = amount * period;
+	var monthlyTotal = amount * period;
 	
-	$annualTotal.text( annualTotal.toFixed(2) );
+	$monthlyTotal.text( monthlyTotal.toFixed(2) );
+	
+}
+
+function calcPercentage($field) {
+	
+	var $percentage = $field.find('.percentage');
+	var $section = $field.parent('.section');
+	
+	var sectionMonthlyTotal = getSectionMonthlyTotal( $section );
+	var percentage = 
 	
 }
 
@@ -42,9 +53,11 @@ function calcField($field) {
 	
 	$amount.find('input').val( amount.toFixed(2) );
 	
-	calcAnnualTotal( $field );
+	calcMonthlyTotal( $field );
 	
-	calcSectionAnnualTotal( $section );
+	calcSectionMonthlyTotal( $section );
+	
+	calcPercentage( $field );
 	
 }
 
@@ -56,7 +69,7 @@ $(document).ready(function() {
 		
 		var $this = $(this);
 		
-		calcAnnualTotal( $this );
+		calcMonthlyTotal( $this );
 		
 	});
 	

@@ -1,14 +1,15 @@
 <?php
 
 	$periods = array(
-		array( 'label' => "Jour", 'value' => 365 ),
-		array( 'label' => "Semaine", 'value' => 52 ),
-		array( 'label' => "2 semaines", 'value' => 26 ),
-		array( 'label' => "Mois", 'value' => 12 ),
-		array( 'label' => "2 mois", 'value' => 6 ),
-		array( 'label' => "3 mois", 'value' => 4 ),
-		array( 'label' => "6 mois", 'value' => 2 ),
-		array( 'label' => "Ann&eacute;e", 'value' => 1 )
+		array( 'label' => "Jour", 'value' => '30.417' ),
+		array( 'label' => "Semaine", 'value' => '4.333' ),
+		array( 'label' => "2 semaines", 'value' => '2.167' ),
+		array( 'label' => "Bi-mensuel", 'value' => '2.000' ),
+		array( 'label' => "Mois", 'value' => '1.000' ),
+		array( 'label' => "2 mois", 'value' => '0.500' ),
+		array( 'label' => "3 mois", 'value' => '0.333' ),
+		array( 'label' => "6 mois", 'value' => '0.167' ),
+		array( 'label' => "Ann&eacute;e", 'value' => '0.083' )
 	);
 	
 	$i = 0;
@@ -19,9 +20,9 @@
 		
 		$field = array_merge( array(
 			'amount' => '0.00',
-			'period' => '12',
-			'annual_total' => '$0.00',
-			'percentage' => '0.0%'
+			'period' => '1.000',
+			'monthly_total' => '0.00',
+			'percentage' => '0.0'
 		), $field );
 		
 	?>
@@ -41,8 +42,8 @@
 					<?php endforeach; ?>
 				</select>
 			</td>
-			<td class="annual-total">
-				<?php echo $field['annual_total']; ?>
+			<td class="monthly-total">
+				<?php echo $field['monthly_total']; ?>
 			</td>
 			<td class="percentage">
 				<?php echo $field['percentage']; ?>
