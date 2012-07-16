@@ -136,7 +136,7 @@
 						array( 'label' => "T&eacute;l&eacute;phone et interurbains", 'description' => "service de base et interurbains", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "T&eacute;l&eacute;phone cellulaire", 'description' => "forfait mensuel ou achats de services pr&eacute;pay&eacute;s", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "T&eacute;l&eacute;avertisseur", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "T&eacute;l&eacute;vision par c&acirc;ble ou par satellite", 'description' => "abonnement &agrave; la t&eacute;l&eacute;vision par c&acirc;ble, par satellite ou &agrave; des chaînes sp&eacute;cialis&eacute;es", 'amount' => 0, 'period' => 12 ),
+						array( 'label' => "T&eacute;l&eacute;vision par c&acirc;ble ou par satellite", 'description' => "abonnement &agrave; la t&eacute;l&eacute;vision par c&acirc;ble, par satellite ou &agrave; des cha&icirc;nes sp&eacute;cialis&eacute;es", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Internet", 'description' => "", 'amount' => 0, 'period' => 12 )
 					)
 				),
