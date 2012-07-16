@@ -203,6 +203,8 @@
 		<title>Online Budget Tool</title>
 		
 		<link rel='stylesheet' id='default-css' href='http://firecdn.net/libs/wpbp/css/default.css?ver=3.4.1' type='text/css' media='all' />
+		<link rel='stylesheet' id='budget-css' href='budget.css' type='text/css' media='all' />
+		
 		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=1.7.1'></script>
 		
 	</head>
