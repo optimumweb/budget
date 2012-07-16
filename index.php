@@ -14,7 +14,16 @@
 	$i = 0;
 
 	function make_row($field, $class = null) {
+		
 		global $periods, $i;
+		
+		array_merge( array(
+			'amount' => '0.00',
+			'period' => '12',
+			'annual_total' => '0.00 $',
+			'percentage' => '0.0 %'
+		), $field );
+		
 	?>
 		<tr class="field <?php echo $class; ?> <?php echo ( $i++ % 2 == 0 ) ? 'even' : 'odd'; ?>">
 			<td class="label">
@@ -32,8 +41,12 @@
 					<?php endforeach; ?>
 				</select>
 			</td>
-			<td class="annual-total"></td>
-			<td class="percentage"></td>
+			<td class="annual-total">
+				<?php echo $field['annual_total']; ?>
+			</td>
+			<td class="percentage">
+				<?php echo $field['percentage']; ?>
+			</td>
 		</tr>
 	<?php }
 
