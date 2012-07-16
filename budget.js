@@ -34,6 +34,12 @@ function calcAnnualTotal($field) {
 }
 
 $(document).ready(function() {
+
+	$('.field').hide();
+	
+	$('.section-label').click(function() {
+		$(this).parent('.section').find('.field').slideDown();
+	});
 	
 	$('.field').each(function() {
 		
