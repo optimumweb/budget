@@ -54,7 +54,7 @@ function refresh() {
 	
 	var end = new Date().getTime();
 	var runtime = end - start;
-	console.log('Runtime: ' + runtime);
+	console.log('Runtime: ' + runtime + 'ms');
 	
 }
 
