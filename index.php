@@ -215,7 +215,7 @@
 
 	<head>
 	
-		<title>Online Budget Tool</title>
+		<title>Budget en ligne</title>
 		
 		<link rel='stylesheet' id='default-css' href='http://firecdn.net/libs/wpbp/css/default.css?ver=3.4.1' type='text/css' media='all' />
 		<link rel='stylesheet' id='budget-css' href='budget.css' type='text/css' media='all' />
