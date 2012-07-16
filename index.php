@@ -287,8 +287,6 @@
 							<td>&nbsp;</td>
 						</tr>
 						
-						<?php make_row( array( 'label' => "Total" ), 'total' ); ?>
-						
 					</tbody>
 					
 				<?php endforeach; ?>
