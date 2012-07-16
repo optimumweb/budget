@@ -53,7 +53,7 @@
 						array( 'label' => "Remboursement d'imp&ocirc;t", 'description' => "retour annuel d'imp&ocirc;t suite &agrave; la production de la d&eacute;claration de revenus", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Remboursement de taxes de ventes", 'description' => "", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Revenus nets de location", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Revenus de placements", 'description' => "revenus d'int&eacute;rêts, dividendes, gains en capital, etc.", 'amount' => 0, 'period' => 12 ),
+						array( 'label' => "Revenus de placements", 'description' => "revenus d'int&eacute;r&ecirc;ts, dividendes, gains en capital, etc.", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Autres revenus", 'description' => "", 'amount' => 0, 'period' => 12 )
 					)
 				),
@@ -121,7 +121,7 @@
 				array(
 					'label' => "Transport",
 					'fields' => array(
-						array( 'label' => "Paiement automobile", 'description' => "paiement d'un prêt automobile ou de la location d'un v&eacute;hicule", 'amount' => 0, 'period' => 12 ),
+						array( 'label' => "Paiement automobile", 'description' => "paiement d'un pr&ecirc;t automobile ou de la location d'un v&eacute;hicule", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Transport public", 'description' => "taxi, train, m&eacute;tro, autobus, etc.", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "D&eacute;penses auto - Essence", 'description' => "", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "D&eacute;penses auto - Entretiens et r&eacute;parations", 'description' => "", 'amount' => 0, 'period' => 12 ),
@@ -168,8 +168,8 @@
 					'fields' => array(
 						array( 'label' => "Carte de cr&eacute;dit", 'description' => "", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Marge de cr&eacute;dit", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Prêt personnel", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Prêt &eacute;tudiant", 'description' => "", 'amount' => 0, 'period' => 12 ),
+						array( 'label' => "Pr&ecirc;t personnel", 'description' => "", 'amount' => 0, 'period' => 12 ),
+						array( 'label' => "Pr&ecirc;t &eacute;tudiant", 'description' => "", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Emprunt", 'description' => "ami ou parent", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Autres emprunts", 'description' => "meubles, consolidation de dettes, etc.", 'amount' => 0, 'period' => 12 )
 					)
@@ -177,9 +177,9 @@
 				array(
 					'label' => "Autres d&eacute;penses",
 					'fields' => array(
-						array( 'label' => "Vêtements", 'description' => "chaussures, manteaux, habits de sports, etc.", 'amount' => 0, 'period' => 12 ),
+						array( 'label' => "V&ecirc;tements", 'description' => "chaussures, manteaux, habits de sports, etc.", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Frais de garde d'enfants", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "D&eacute;penses li&eacute;es aux enfants", 'description' => "argent de poche, si&egrave;ge d'auto, poussette, jouets, v&eacute;lo, patins, vêtements, cours, etc.", 'amount' => 0, 'period' => 12 ),
+						array( 'label' => "D&eacute;penses li&eacute;es aux enfants", 'description' => "argent de poche, si&egrave;ge d'auto, poussette, jouets, v&eacute;lo, patins, v&ecirc;tements, cours, etc.", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Soins personnels", 'description' => "coiffure et esth&eacute;tique", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Frais financiers", 'description' => "forfait, frais de service, etc.", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "D&eacute;penses personnelles", 'description' => "", 'amount' => 0, 'period' => 12 ),
