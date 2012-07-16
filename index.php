@@ -239,7 +239,7 @@
 					<th class="empty">&nbsp;</th>
 					<th>Montant</th>
 					<th>P&eacute;riode</th>
-					<th>Montant annuel</th>
+					<th>Montant mensuel</th>
 					<th>Pourcentage</th>
 					
 				</thead>
@@ -286,7 +286,7 @@
 							<td class="label">Total</td>
 							<td>&nbsp;</td>
 							<td>&nbsp;</td>
-							<td class="annual-total">0.00</td>
+							<td class="monthly-total">0.00</td>
 							<td>&nbsp;</td>
 						</tr>
 						
