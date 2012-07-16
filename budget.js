@@ -42,6 +42,8 @@ $(document).ready(function() {
 		var $this = $(this);
 		var $field = $this.parent('.field');
 		
+		$this.find('input').val( $this.find('input').val().toFixed(2) );
+		
 		calcAnnualTotal( $field );
 		
 	});
