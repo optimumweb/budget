@@ -1,4 +1,7 @@
 function refresh() {
+
+	var start = new Date().getTime();
+	console.log('Refreshing...');
 	
 	var $sections = $('.section');
 	
@@ -49,6 +52,10 @@ function refresh() {
 	
 	});
 	
+	var end = new Date().getTime();
+	var runtime = end - start;
+	console.log('Runtime: ' + runtime);
+	
 }
 
 $(document).ready(function() {
@@ -58,11 +65,7 @@ $(document).ready(function() {
 	
 	refresh();
 	
-	$inputs.bind('change focusout blur', function() {
-		
-		refresh();
-		
-	});
+	$inputs.bind('change', 'refresh');
 
 
 });
