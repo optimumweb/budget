@@ -61,13 +61,17 @@ function calcField($field) {
 		return this;
 	};
 	
-	this.calcAll = function() {
-		alert('calcAll!');
-		return this;
-		return this.refreshAmount().calcMonthlyTotal().calcPercentage();
-	};
-	
 	return $field;
+	
+}
+
+function calcAll($field) {
+	
+	$section = $field.parent('.section');
+	
+	calcField( $field ).refreshAmount().calcMonthlyTotal().calcPercentage();
+	
+	calcSection( $section ).calcMonthlyTotal();
 	
 }
 
@@ -88,11 +92,8 @@ $(document).ready(function() {
 		
 		var $this = $(this);
 		var $field = $this.parent('.field');
-		var $section = $field.parent('.section');
 		
-		calcField( $field ).calcAll();
-		
-		calcSection( $section ).calcMonthlyTotal();
+		calcAll( $field );
 		
 	});
 
