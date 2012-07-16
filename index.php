@@ -279,6 +279,14 @@
 							
 						<?php endforeach; ?>
 						
+						<tr class="total">
+							<td class="label">Total</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td class="annual-total">0.00</td>
+							<td>&nbsp;</td>
+						</tr>
+						
 						<?php make_row( array( 'label' => "Total" ), 'total' ); ?>
 						
 					</tbody>
