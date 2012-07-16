@@ -139,8 +139,8 @@
 					'fields' => array(
 						array( 'label' => "Paiement automobile", 'description' => "paiement d'un pr&ecirc;t automobile ou de la location d'un v&eacute;hicule" ),
 						array( 'label' => "Transport public", 'description' => "taxi, train, m&eacute;tro, autobus, etc." ),
-						array( 'label' => "D&eacute;penses auto - Essence" ),
-						array( 'label' => "D&eacute;penses auto - Entretiens et r&eacute;parations" ),
+						array( 'label' => "D&eacute;penses auto : essence" ),
+						array( 'label' => "D&eacute;penses auto : entretiens et r&eacute;parations" ),
 						array( 'label' => "Assurance auto" ),
 						array( 'label' => "Stationnement" ),
 						array( 'label' => "Immatriculation et permis de conduire" )

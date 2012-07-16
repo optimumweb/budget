@@ -69,6 +69,7 @@ jQuery.fn.budget = function() {
 	
 		var $this = $(this);
 		var $sectionTitles = $this.find('.section-title');
+		var $sectionLabels = $this.find('.section-labels');
 		var $sections = $this.find('.section');
 		var $fields = $this.find('.field');
 		var $inputs = $fields.find('input, select');
