@@ -1,4 +1,4 @@
-function calcSection($section) {
+var calcSection = function($section) {
 
 	var $fields = $section.find('.field');
 	var $total = $section.find('.total');
@@ -30,9 +30,9 @@ function calcSection($section) {
 	
 	return $section;
 	
-}
+};
 
-function calcField($field) {
+var calcField = function($field) {
 	
 	var $amount = $field.find('.amount'), amount = parseFloat( $amount.find('input').val() );
 	var $period = $field.find('.period'), period = parseFloat( $period.find('select').val() );
@@ -63,7 +63,7 @@ function calcField($field) {
 	
 	return $field;
 	
-}
+};
 
 function calcAll($field) {
 	
