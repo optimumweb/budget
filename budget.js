@@ -11,13 +11,13 @@ function sectionAnnualTotal($section) {
 		
 	});
 	
-	return total.toFixed(2);
+	return total;
 	
 }
 
 function calcSectionAnnualTotal($section) {
 	
-	$section.find('.field.total').find('.annual-total').text( '$' + sectionAnnualTotal( $section ) );
+	$section.find('.field.total').find('.annual-total').text( '$' + sectionAnnualTotal( $section ).toFixed(2) );
 	
 }
 
