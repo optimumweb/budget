@@ -21,7 +21,7 @@
 				<?php echo $field['label']; ?> <span class="description"><?php echo $field['description']; ?></span>
 			</td>
 			<td class="amount">
-				<input type="text" />
+				<input type="text" value="<?php echo $field['amount']; ?>" />
 			</td>
 			<td class="period">
 				<select>
@@ -264,6 +264,8 @@
 							<?php endif; ?>
 							
 						<?php endforeach; ?>
+						
+						<?php make_row( array( 'label' => "Total", 'amount' => 0, 'period' => 12 ) ); ?>
 						
 					</tbody>
 					
