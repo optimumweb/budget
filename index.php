@@ -211,61 +211,65 @@
 	
 	<body>
 	
-		<h1>Online Budget Tool</h1>
-		
-		<table width="100%" cellpadding="5" cellspacing="0" border="0">
-		
-			<thead>
+		<div id="wrap">
+	
+			<h1>Online Budget Tool</h1>
 			
-				<th>Cat&eacute;gorie</th>
-				<th>Montant</th>
-				<th>P&eacute;riode</th>
-				<th>Montant annuel</th>
-				<th>Pourcentage</th>
+			<table width="100%" cellpadding="5" cellspacing="0" border="0">
+			
+				<thead>
 				
-			</thead>
-			
-			<?php foreach ( $budget as $section_key => $section ) : ?>
-			
-				<tbody class="<?php echo $section_key; ?>">
+					<th>Cat&eacute;gorie</th>
+					<th>Montant</th>
+					<th>P&eacute;riode</th>
+					<th>Montant annuel</th>
+					<th>Pourcentage</th>
 					
-					<tr>
-						<td class="section-label" colspan="5"><?php echo $section['label']; ?></td>
-					</tr>
-					
-					<?php foreach ( $section['categories'] as $category ) : ?>
-					
-						<?php if ( $category['label'] ) : ?>
-							
-							<tr>
-								<td class="category-label" colspan="5">
-									<?php echo $category['label']; ?>
-								</td>
-							</tr>
-							
-							<?php foreach ( $category['fields'] as $field ) : ?>
-								
-								<?php make_row( $field, 'sub' ); ?>
-								
-							<?php endforeach; ?>
-							
-						<?php else : ?>
-							
-							<?php foreach ( $category['fields'] as $field ) : ?>
-								
-								<?php make_row( $field ); ?>
-								
-							<?php endforeach; ?>
-							
-						<?php endif; ?>
+				</thead>
+				
+				<?php foreach ( $budget as $section_key => $section ) : ?>
+				
+					<tbody class="<?php echo $section_key; ?>">
 						
-					<?php endforeach; ?>
+						<tr>
+							<td class="section-label" colspan="5"><?php echo $section['label']; ?></td>
+						</tr>
+						
+						<?php foreach ( $section['categories'] as $category ) : ?>
+						
+							<?php if ( $category['label'] ) : ?>
+								
+								<tr>
+									<td class="category-label" colspan="5">
+										<?php echo $category['label']; ?>
+									</td>
+								</tr>
+								
+								<?php foreach ( $category['fields'] as $field ) : ?>
+									
+									<?php make_row( $field, 'sub' ); ?>
+									
+								<?php endforeach; ?>
+								
+							<?php else : ?>
+								
+								<?php foreach ( $category['fields'] as $field ) : ?>
+									
+									<?php make_row( $field ); ?>
+									
+								<?php endforeach; ?>
+								
+							<?php endif; ?>
+							
+						<?php endforeach; ?>
+						
+					</tbody>
 					
-				</tbody>
+				<?php endforeach; ?>
 				
-			<?php endforeach; ?>
-			
-		</table>
+			</table>
+		
+		</div>
 		
 	</body>
 	
