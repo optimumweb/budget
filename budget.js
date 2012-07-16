@@ -63,8 +63,8 @@ jQuery.fn.budget = function() {
 	return this.each(function() {
 	
 		var $this = $(this);
-		var $theads = $this.find('.thead');
-		var $tbodys = $this.find('.tbody');
+		var $theads = $this.find('thead');
+		var $tbodys = $this.find('tbody');
 		var $fields = $this.find('.field');
 		var $inputs = $fields.find('input, select');
 		
