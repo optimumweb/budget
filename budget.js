@@ -15,7 +15,7 @@ $(document).ready(function() {
 		
 		return total.toFixed(2);
 		
-	};
+	}
 	
 	function calcSectionAnnualTotal($section) {
 		
