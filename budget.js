@@ -48,11 +48,12 @@ $(document).ready(function() {
 		
 	});
 	
-	$field.focusout(function() {
+	$field.find('input, select').focusout(function() {
 		
 		var $this = $(this);
-		var $amount = $this.find('.amount'), amount = parseFloat( $input.val() );
-		var $section = $this.parent('.section');
+		var $field = $this.parent('.field');
+		var $amount = $field.find('.amount'), amount = parseFloat( $amount.val() );
+		var $section = $field.parent('.section');
 		
 		$amount.find('input').val(  amount.toFixed(2) );
 		
