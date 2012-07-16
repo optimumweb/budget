@@ -44,9 +44,14 @@ function refresh() {
 			var $monthlyTotal = $field.find('.monthly-total'), monthlyTotal = parseFloat( $monthlyTotal.text() );
 			var $percentage = $field.find('.percentage'), percentage = parseFloat( $percentage.text() );
 			
-			var newPercentage = ( monthlyTotal / sectionMonthlyTotal ) * 100;
-			$percentage.text( newPercentage.toFixed(1) );
-			percentage = newPercentage;
+			if ( sectionMonthlyTotal != 0 ) {
+				var newPercentage = ( monthlyTotal / sectionMonthlyTotal ) * 100;
+				$percentage.text( newPercentage.toFixed(1) );
+				percentage = newPercentage;
+			}
+			else {
+				$percentage.text( '-' );
+			}
 			
 		});
 	
