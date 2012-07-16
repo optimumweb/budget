@@ -2,12 +2,12 @@ function sectionAnnualTotal($section) {
 	
 	var total = 0;
 	
-	$section.find('.field').each(function() {
+	$section.find('.field').not('.total').each(function() {
 		
 		var $this = $(this);
 		var $annualTotal = $this.find('.annual-total');
 		
-		total += parseFloat( $annualTotal.text() );
+		total = total + parseFloat( $annualTotal.text() );
 		
 	});
 	
