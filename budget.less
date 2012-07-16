@@ -32,6 +32,19 @@ body {
 			text-transform: uppercase;
 			background: #0f3c69;
 		}
+		
+		&.section-title {
+			cursor: pointer;
+		
+			.section-label {
+				padding-left: 30px;
+				background: url(collapse.png) 5px center no-repeat;
+			}
+			
+			&.collapsed .section-label {
+				background-image: url(expand.png);
+			}
+		}
 	}
 
 	tbody {

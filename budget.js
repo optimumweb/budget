@@ -78,12 +78,14 @@ jQuery.fn.budget = function() {
 		
 		$inputs.bind('change', refresh);
 		
+		$sectionTitles.addClass('collapsed').first().removeClass('collapsed');
 		$sections.addClass('hidden').first().removeClass('hidden');
 		
 		$sectionTitles.click(function(e) {
 			e.preventDefault();
 			var section = $(this).data('for'), $section = $this.find( '#' + section );
 			$section.toggleClass('hidden');
+			$(this).toggleClass('collapsed');
 		});
 		
 	});
