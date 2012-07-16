@@ -1,72 +1,68 @@
-function getSectionMonthlyTotal($section) {
-	
-	var total = 0;
-	
-	$section.find('.field').each(function() {
-		
-		var $this = $(this);
-		var $monthlyTotal = $this.find('.monthly-total');
-		
-		total = total + parseFloat( $monthlyTotal.text() );
-		
-	});
-	
-	return parseFloat( total );
-	
-}
+function calcSection($section) {
 
-function calcSectionMonthlyTotal($section) {
+	var $fields = $section.find('.field');
+	var $total = $section.find('.total');
+	var $monthlyTotal = $total.find('.monthly-total');
 	
-	var sectionMonthlyTotal = getSectionMonthlyTotal( $section );
-	var $sectionMonthlyTotal = $section.find('.total').find('.monthly-total');
+	this.getMonthlyTotal = function() {
+		
+		var total = 0;
+		
+		$fields.each(function() {
+			var $field = $(this);
+			var $fieldMonthlyTotal = $field.find('.monthly-total');
+			total += parseFloat( $fieldMonthlyTotal.text() );
+		});
+		
+		return parseFloat( total );
+		
+	};
 	
-	$sectionMonthlyTotal.text( sectionMonthlyTotal.toFixed(2) );
-	
-}
-
-function calcMonthlyTotal($field) {
-	
-	var $amount = $field.find('.amount'), amount = parseFloat( $amount.find('input').val() );
-	var $period = $field.find('.period'), period = parseFloat( $period.find('select').val() );
-	var $monthlyTotal = $field.find('.monthly-total');
-	
-	var monthlyTotal = amount * period;
-	
-	$monthlyTotal.text( monthlyTotal.toFixed(2) );
-	
-}
-
-function calcPercentage($field) {
-	
-	var $percentage = $field.find('.percentage');
-	var $monthlyTotal = $field.find('.monthly-total'), monthlyTotal = parseFloat( $monthlyTotal.text() );
-	var $section = $field.parent('.section');
-	
-	var sectionMonthlyTotal = getSectionMonthlyTotal( $section );
-	var percentage = ( monthlyTotal / sectionMonthlyTotal ) * 100;
-	
-	$percentage.text( percentage.toFixed(1) );
+	this.calcMonthlyTotal = function() {
+		
+		var total = calcSection( $section ).getMonthlyTotal();
+		
+		$monthlyTotal.text( total.toFixed(2) );
+		
+		return this;
+		
+	};
 	
 }
 
 function calcField($field) {
 	
 	var $amount = $field.find('.amount'), amount = parseFloat( $amount.find('input').val() );
+	var $period = $field.find('.period'), period = parseFloat( $period.find('select').val() );
+	var $monthlyTotal = $field.find('.monthly-total'), monthlyTotal = parseFloat( $monthlyTotal.text() );
+	var $percentage = $field.find('.percentage'), percentage = parseFloat( $percentage.text() );
+
 	var $section = $field.parent('.section');
 	
-	$amount.find('input').val( amount.toFixed(2) );
+	this.refreshAmount = function() {
+		$amount.find('input').val( amount.toFixed(2) );
+		return this;
+	};
 	
-	calcMonthlyTotal( $field );
+	this.calcMonthlyTotal = function() {
+		var newMonthlyTotal = amount * period;
+		$monthlyTotal.text( newMonthlyTotal.toFixed(2) );
+		monthlyTotal = newMonthlyTotal;
+	};
 	
-	calcSectionMonthlyTotal( $section );
-	
-	calcPercentage( $field );
+	this.calcPercentage = function() {
+		var sectionMonthlyTotal = calcSection.getMonthlyTotal();
+		var newPercentage = ( monthlyTotal / sectionMonthlyTotal ) * 100;
+		$percentage.text( newPercentage.toFixed(1) );
+		percentage = newPercentage;
+	};
 	
 }
 
 $(document).ready(function() {
 	
 	var $field = $('.field');
+	var $inputs = $field.find('input, select');
 	
 	$field.each(function() {
 		
@@ -76,19 +72,15 @@ $(document).ready(function() {
 		
 	});
 	
-	$field.find('.amount').focusout(function() {
+	$inputs.bind('change focusout blur', function() {
 		
-		var $field = $(this).parent('.field');
+		var $this = $(this);
+		var $field = $this.parent('.field');
+		var $section = $field.parent('.section');
 		
-		calcField( $field );
+		calcField( $field ).refreshAmount().calcMonthlyTotal().calcPercentage();
 		
-	});
-	
-	$field.find('.period').find('select').change(function() {
-		
-		var $field = $(this).parent('.field');
-		
-		calcField( $field );
+		calcSection( $section ).calcMonthlyTotal();
 		
 	});
 
