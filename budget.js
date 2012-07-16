@@ -37,6 +37,7 @@ function refresh() {
 		// refresh percentages
 		$sectionFields.each(function() {
 			
+			var $field = $(this);
 			var $monthlyTotal = $field.find('.monthly-total'), monthlyTotal = parseFloat( $monthlyTotal.text() );
 			var $percentage = $field.find('.percentage'), percentage = parseFloat( $percentage.text() );
 			
