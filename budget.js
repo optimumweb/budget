@@ -48,6 +48,7 @@ function calcField($field) {
 		var newMonthlyTotal = amount * period;
 		$monthlyTotal.text( newMonthlyTotal.toFixed(2) );
 		monthlyTotal = newMonthlyTotal;
+		return this;
 	};
 	
 	this.calcPercentage = function() {
@@ -55,10 +56,11 @@ function calcField($field) {
 		var newPercentage = ( monthlyTotal / sectionMonthlyTotal ) * 100;
 		$percentage.text( newPercentage.toFixed(1) );
 		percentage = newPercentage;
+		return this;
 	};
 	
 	this.calcAll = function() {
-		return this.refreshAmount().calcMonthlyTotal().calcPercentage();
+		return calcField( $field ).refreshAmount().calcMonthlyTotal().calcPercentage();
 	};
 	
 }
