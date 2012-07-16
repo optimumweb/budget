@@ -38,7 +38,7 @@ $(document).ready(function() {
 	$('.field, .total, .category-label').hide();
 	
 	$('.section-label').click(function() {
-		$(this).parent('.section').find('.field, .total, .category-label').slideDown();
+		$(this).parent('.section').find('.field, .total, .category-label').show();
 	});
 	
 	$('.field').each(function() {
