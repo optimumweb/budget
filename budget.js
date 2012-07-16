@@ -17,6 +17,12 @@ $(document).ready(function() {
 		
 	};
 	
+	function calcSectionAnnualTotal($section) {
+		
+		$section.find('.total').find('.annual-total').text( '$' + sectionAnnualTotal( $section ) );
+		
+	}
+	
 	function calcAnnualTotal($field) {
 		
 		var $amount = $field.find('.amount'), amount = parseFloat( $amount.find('input').val() );
@@ -27,7 +33,7 @@ $(document).ready(function() {
 		
 		$annualTotal.text( '$' + annualTotal.toFixed(2) );
 		
-	};
+	}
 	
 	$('.field').each(function() {
 		
@@ -42,12 +48,15 @@ $(document).ready(function() {
 		var $this = $(this);
 		var $input = $this.find('input');
 		var $field = $this.parent('.field');
+		var $section = $field.parent('.section');
 		
 		var amount = parseFloat( $input.val() );
 		
 		$input.val(  amount.toFixed(2) );
 		
 		calcAnnualTotal( $field );
+		
+		calcSectionAnnualTotal( $section );
 		
 	});
 
