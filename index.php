@@ -57,31 +57,31 @@
 				array(
 					'label' => false,
 					'fields' => array(
-						array( 'label' => "R&eacute;mun&eacute;ration nette d'un emploi", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Revenu net d'un travail autonome", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Revenu d'appoint net", 'description' => "deuxi&egrave;me emploi, revenu secondaire", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Commissions", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Bonus", 'description' => "bonus et primes nets re&ccedil;us dans le cadre d'un emploi", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Pourboires", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Prestations gouvernementales", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Bourses", 'description' => "bourse d'&eacute;tude, bourse au rendement, etc.", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Remboursement d'imp&ocirc;t", 'description' => "retour annuel d'imp&ocirc;t suite &agrave; la production de la d&eacute;claration de revenus", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Remboursement de taxes de ventes", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Revenus nets de location", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Revenus de placements", 'description' => "revenus d'int&eacute;r&ecirc;ts, dividendes, gains en capital, etc.", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Autres revenus", 'description' => "", 'amount' => 0, 'period' => 12 )
+						array( 'label' => "R&eacute;mun&eacute;ration nette d'un emploi" ),
+						array( 'label' => "Revenu net d'un travail autonome" ),
+						array( 'label' => "Revenu d'appoint net", 'description' => "deuxi&egrave;me emploi, revenu secondaire" ),
+						array( 'label' => "Commissions" ),
+						array( 'label' => "Bonus", 'description' => "bonus et primes nets re&ccedil;us dans le cadre d'un emploi" ),
+						array( 'label' => "Pourboires" ),
+						array( 'label' => "Prestations gouvernementales" ),
+						array( 'label' => "Bourses", 'description' => "bourse d'&eacute;tude, bourse au rendement, etc." ),
+						array( 'label' => "Remboursement d'imp&ocirc;t", 'description' => "retour annuel d'imp&ocirc;t suite &agrave; la production de la d&eacute;claration de revenus" ),
+						array( 'label' => "Remboursement de taxes de ventes" ),
+						array( 'label' => "Revenus nets de location" ),
+						array( 'label' => "Revenus de placements", 'description' => "revenus d'int&eacute;r&ecirc;ts, dividendes, gains en capital, etc." ),
+						array( 'label' => "Autres revenus" )
 					)
 				),
 				array(
 					'label' => "Pension ou autres prestations nettes :",
 					'fields' => array(
-						array( 'label' => "Rentes", 'description' => "viag&egrave;res ou &agrave; &eacute;ch&eacute;ance fixe", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Revenus de fonds enregistr&eacute;s de revenu de retraite (FERR)", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "R&eacute;gime de pension agr&eacute;&eacute; (caisse de retraite)", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Rente de retraite de la R&eacute;gie des rentes du Qu&eacute;bec (RRQ) ou du R&eacute;gime de pensions du Canada (RPC)", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Prestation fiscale pour enfants", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Pension alimentaire", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Aide sociale", 'description' => "secours financier pour une personne en difficult&eacute;", 'amount' => 0, 'period' => 12 )
+						array( 'label' => "Rentes", 'description' => "viag&egrave;res ou &agrave; &eacute;ch&eacute;ance fixe" ),
+						array( 'label' => "Revenus de fonds enregistr&eacute;s de revenu de retraite (FERR)" ),
+						array( 'label' => "R&eacute;gime de pension agr&eacute;&eacute; (caisse de retraite)" ),
+						array( 'label' => "Rente de retraite de la R&eacute;gie des rentes du Qu&eacute;bec (RRQ) ou du R&eacute;gime de pensions du Canada (RPC)" ),
+						array( 'label' => "Prestation fiscale pour enfants" ),
+						array( 'label' => "Pension alimentaire" ),
+						array( 'label' => "Aide sociale", 'description' => "secours financier pour une personne en difficult&eacute;" )
 					)
 				)
 			)
@@ -92,16 +92,16 @@
 				array(
 					'label' => false,
 					'fields' => array(
-						array( 'label' => "R&eacute;serve pour impr&eacute;vus", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "&Eacute;conomies", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "&Eacute;pargne retraite", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "&Eacute;pargne habitation", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "&Eacute;pargne &eacute;tudes", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Placements", 'description' => "CPG, fonds communs de placement, actions en bourse, etc.", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "&Eacute;pargne vacances", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "&Eacute;pargne voyage", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "&Eacute;pargne voiture", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Autres", 'description' => "", 'amount' => 0, 'period' => 12 )
+						array( 'label' => "R&eacute;serve pour impr&eacute;vus" ),
+						array( 'label' => "&Eacute;conomies" ),
+						array( 'label' => "&Eacute;pargne retraite" ),
+						array( 'label' => "&Eacute;pargne habitation" ),
+						array( 'label' => "&Eacute;pargne &eacute;tudes" ),
+						array( 'label' => "Placements", 'description' => "CPG, fonds communs de placement, actions en bourse, etc." ),
+						array( 'label' => "&Eacute;pargne vacances" ),
+						array( 'label' => "&Eacute;pargne voyage" ),
+						array( 'label' => "&Eacute;pargne voiture" ),
+						array( 'label' => "Autres" )
 					)
 				)
 			)
@@ -112,96 +112,96 @@
 				array(
 					'label' => "Habitation",
 					'fields' => array(
-						array( 'label' => "Loyer ou versement hypoth&eacute;caire", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Taxes municipales", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Taxes scolaires", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Taxes d'eau", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "&Eacute;lectricit&eacute;", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Chauffage", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Syst&egrave;me d'alarme", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Am&eacute;nagement et entretien", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Assurance habitation", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Perte de revenus locatifs", 'description' => "", 'amount' => 0, 'period' => 12 )
+						array( 'label' => "Loyer ou versement hypoth&eacute;caire" ),
+						array( 'label' => "Taxes municipales" ),
+						array( 'label' => "Taxes scolaires" ),
+						array( 'label' => "Taxes d'eau" ),
+						array( 'label' => "&Eacute;lectricit&eacute;" ),
+						array( 'label' => "Chauffage" ),
+						array( 'label' => "Syst&egrave;me d'alarme" ),
+						array( 'label' => "Am&eacute;nagement et entretien" ),
+						array( 'label' => "Assurance habitation" ),
+						array( 'label' => "Perte de revenus locatifs" )
 					)
 				),
 				array(
 					'label' => "Assurances personnelles",
 					'fields' => array(
-						array( 'label' => "Assurance vie", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Assurance invalidit&eacute;", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Assurance maladie grave", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Assurance accident", 'description' => "", 'amount' => 0, 'period' => 12 )
+						array( 'label' => "Assurance vie" ),
+						array( 'label' => "Assurance invalidit&eacute;" ),
+						array( 'label' => "Assurance maladie grave" ),
+						array( 'label' => "Assurance accident" )
 					)
 				),
 				array(
 					'label' => "Transport",
 					'fields' => array(
-						array( 'label' => "Paiement automobile", 'description' => "paiement d'un pr&ecirc;t automobile ou de la location d'un v&eacute;hicule", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Transport public", 'description' => "taxi, train, m&eacute;tro, autobus, etc.", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "D&eacute;penses auto - Essence", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "D&eacute;penses auto - Entretiens et r&eacute;parations", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Assurance auto", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Stationnement", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Immatriculation et permis de conduire", 'description' => "", 'amount' => 0, 'period' => 12 )
+						array( 'label' => "Paiement automobile", 'description' => "paiement d'un pr&ecirc;t automobile ou de la location d'un v&eacute;hicule" ),
+						array( 'label' => "Transport public", 'description' => "taxi, train, m&eacute;tro, autobus, etc." ),
+						array( 'label' => "D&eacute;penses auto - Essence" ),
+						array( 'label' => "D&eacute;penses auto - Entretiens et r&eacute;parations" ),
+						array( 'label' => "Assurance auto" ),
+						array( 'label' => "Stationnement" ),
+						array( 'label' => "Immatriculation et permis de conduire" )
 					)
 				),
 				array(
 					'label' => "T&eacute;l&eacute;communications",
 					'fields' => array(
-						array( 'label' => "T&eacute;l&eacute;phone et interurbains", 'description' => "service de base et interurbains", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "T&eacute;l&eacute;phone cellulaire", 'description' => "forfait mensuel ou achats de services pr&eacute;pay&eacute;s", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "T&eacute;l&eacute;avertisseur", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "T&eacute;l&eacute;vision par c&acirc;ble ou par satellite", 'description' => "abonnement &agrave; la t&eacute;l&eacute;vision par c&acirc;ble, par satellite ou &agrave; des cha&icirc;nes sp&eacute;cialis&eacute;es", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Internet", 'description' => "", 'amount' => 0, 'period' => 12 )
+						array( 'label' => "T&eacute;l&eacute;phone et interurbains", 'description' => "service de base et interurbains" ),
+						array( 'label' => "T&eacute;l&eacute;phone cellulaire", 'description' => "forfait mensuel ou achats de services pr&eacute;pay&eacute;s" ),
+						array( 'label' => "T&eacute;l&eacute;avertisseur" ),
+						array( 'label' => "T&eacute;l&eacute;vision par c&acirc;ble ou par satellite", 'description' => "abonnement &agrave; la t&eacute;l&eacute;vision par c&acirc;ble, par satellite ou &agrave; des cha&icirc;nes sp&eacute;cialis&eacute;es" ),
+						array( 'label' => "Internet" )
 					)
 				),
 				array(
 					'label' => "Alimentation",
 					'fields' => array(
-						array( 'label' => "&Eacute;picerie", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Restaurant", 'description' => "", 'amount' => 0, 'period' => 12 )
+						array( 'label' => "&Eacute;picerie" ),
+						array( 'label' => "Restaurant" )
 					)
 				),
 				array(
 					'label' => "Sant&eacute;",
 					'fields' => array(
-						array( 'label' => "Soins de sant&eacute;", 'description' => "soins m&eacute;dicaux, param&eacute;dicaux et dentaires, achat de lunettes, etc.", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Pharmacie", 'description' => "achat de m&eacute;dicaments etc.", 'amount' => 0, 'period' => 12 )
+						array( 'label' => "Soins de sant&eacute;", 'description' => "soins m&eacute;dicaux, param&eacute;dicaux et dentaires, achat de lunettes, etc." ),
+						array( 'label' => "Pharmacie", 'description' => "achat de m&eacute;dicaments etc." )
 					)
 				),
 				array(
 					'label' => "Loisirs et &eacute;ducation",
 					'fields' => array(
-						array( 'label' => "Frais de scolarit&eacute;", 'description' => "livres, mat&eacute;riel scolaire, activit&eacute;s parascolaires, frais de l'institution d'enseignement, etc.", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Sports et loisirs", 'description' => "passe-temps, spectacles, cin&eacute;ma, location de vid&eacute;os, livres et revues, &eacute;quipement de sports, etc.", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Vacances", 'description' => "avion, h&ocirc;tel, restaurant, &eacute;quipement, souvenirs, camping, assurance voyage, etc.", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Abonnements", 'description' => "journaux, revues, club sportif, etc.", 'amount' => 0, 'period' => 12 )
+						array( 'label' => "Frais de scolarit&eacute;", 'description' => "livres, mat&eacute;riel scolaire, activit&eacute;s parascolaires, frais de l'institution d'enseignement, etc." ),
+						array( 'label' => "Sports et loisirs", 'description' => "passe-temps, spectacles, cin&eacute;ma, location de vid&eacute;os, livres et revues, &eacute;quipement de sports, etc." ),
+						array( 'label' => "Vacances", 'description' => "avion, h&ocirc;tel, restaurant, &eacute;quipement, souvenirs, camping, assurance voyage, etc." ),
+						array( 'label' => "Abonnements", 'description' => "journaux, revues, club sportif, etc." )
 					)
 				),
 				array(
 					'label' => "Remboursement d'emprunts",
 					'fields' => array(
-						array( 'label' => "Carte de cr&eacute;dit", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Marge de cr&eacute;dit", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Pr&ecirc;t personnel", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Pr&ecirc;t &eacute;tudiant", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Emprunt", 'description' => "ami ou parent", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Autres emprunts", 'description' => "meubles, consolidation de dettes, etc.", 'amount' => 0, 'period' => 12 )
+						array( 'label' => "Carte de cr&eacute;dit" ),
+						array( 'label' => "Marge de cr&eacute;dit" ),
+						array( 'label' => "Pr&ecirc;t personnel" ),
+						array( 'label' => "Pr&ecirc;t &eacute;tudiant" ),
+						array( 'label' => "Emprunt", 'description' => "ami ou parent" ),
+						array( 'label' => "Autres emprunts", 'description' => "meubles, consolidation de dettes, etc." )
 					)
 				),
 				array(
 					'label' => "Autres d&eacute;penses",
 					'fields' => array(
-						array( 'label' => "V&ecirc;tements", 'description' => "chaussures, manteaux, habits de sports, etc.", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Frais de garde d'enfants", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "D&eacute;penses li&eacute;es aux enfants", 'description' => "argent de poche, si&egrave;ge d'auto, poussette, jouets, v&eacute;lo, patins, v&ecirc;tements, cours, etc.", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Soins personnels", 'description' => "coiffure et esth&eacute;tique", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Frais financiers", 'description' => "forfait, frais de service, etc.", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "D&eacute;penses personnelles", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Dons de charit&eacute;", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Cadeaux", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Tabac", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Boissons alcoolis&eacute;es", 'description' => "bi&egrave;re, vin, etc.", 'amount' => 0, 'period' => 12 )
+						array( 'label' => "V&ecirc;tements", 'description' => "chaussures, manteaux, habits de sports, etc." ),
+						array( 'label' => "Frais de garde d'enfants" ),
+						array( 'label' => "D&eacute;penses li&eacute;es aux enfants", 'description' => "argent de poche, si&egrave;ge d'auto, poussette, jouets, v&eacute;lo, patins, v&ecirc;tements, cours, etc." ),
+						array( 'label' => "Soins personnels", 'description' => "coiffure et esth&eacute;tique" ),
+						array( 'label' => "Frais financiers", 'description' => "forfait, frais de service, etc." ),
+						array( 'label' => "D&eacute;penses personnelles" ),
+						array( 'label' => "Dons de charit&eacute;" ),
+						array( 'label' => "Cadeaux" ),
+						array( 'label' => "Tabac" ),
+						array( 'label' => "Boissons alcoolis&eacute;es", 'description' => "bi&egrave;re, vin, etc." )
 					)
 				)
 			)
@@ -279,7 +279,7 @@
 							
 						<?php endforeach; ?>
 						
-						<?php make_row( array( 'label' => "Total", 'amount' => 0, 'period' => 12 ) ); ?>
+						<?php make_row( array( 'label' => "Total" ), 'total' ); ?>
 						
 					</tbody>
 					
