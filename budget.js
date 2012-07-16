@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	
-	var sectionAnnualTotal = function($section) {
+	function sectionAnnualTotal($section) {
 		
 		var total = 0;
 		
