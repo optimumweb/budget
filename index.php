@@ -19,7 +19,7 @@
 				<?php echo $field['label']; ?> <span class="description"><?php echo $field['description']; ?></span>
 			</td>
 			<td class="amount">
-				<input type="text" /> $
+				<input type="text" />
 			</td>
 			<td class="period">
 				<select>
