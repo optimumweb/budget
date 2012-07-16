@@ -47,7 +47,7 @@ $(document).ready(function() {
 		
 	});
 	
-	$field.find('input, select').focusout(function() {
+	$field.find('.amount, .period').focusout(function() {
 		
 		var $this = $(this);
 		var $field = $this.parent('.field');
