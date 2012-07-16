@@ -43,7 +43,7 @@ function calcPercentage($field) {
 	var $section = $field.parent('.section');
 	
 	var sectionMonthlyTotal = getSectionMonthlyTotal( $section );
-	var percentage = monthlyTotal / sectionMonthlyTotal;
+	var percentage = ( monthlyTotal / sectionMonthlyTotal ) * 100;
 	
 	$percentage.text( percentage.toFixed(1) );
 	
