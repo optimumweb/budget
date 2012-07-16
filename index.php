@@ -211,7 +211,7 @@
 	
 	<body>
 	
-		<div id="wrap">
+		<div id="budget-wrap">
 	
 			<h1>Online Budget Tool</h1>
 			
