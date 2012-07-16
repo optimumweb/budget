@@ -28,7 +28,7 @@ function calcSection($section) {
 		
 	};
 	
-	return this;
+	return $section;
 	
 }
 
@@ -65,7 +65,7 @@ function calcField($field) {
 		return this.refreshAmount().calcMonthlyTotal().calcPercentage();
 	};
 	
-	return this;
+	return $field;
 	
 }
 
