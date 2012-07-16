@@ -68,8 +68,8 @@ jQuery.fn.budget = function() {
 	return this.each(function() {
 	
 		var $this = $(this);
-		var $theads = $this.find('thead');
-		var $tbodys = $this.find('tbody');
+		var $sectionTitles = $this.find('.section-title');
+		var $sections = $this.find('.section');
 		var $fields = $this.find('.field');
 		var $inputs = $fields.find('input, select');
 		
@@ -77,16 +77,12 @@ jQuery.fn.budget = function() {
 		
 		$inputs.bind('change', refresh);
 		
-		$tbodys.addClass('hidden').first().removeClass('hidden');
+		$sections.addClass('hidden').first().removeClass('hidden');
 		
-		$theads.click(function(e) {
-			
+		$sectionTitles.click(function(e) {
 			e.preventDefault();
-			
-			var tbody = $(this).data('for'), $tbody = $this.find( '#' + tbody );
-			
-			$tbody.toggleClass('hidden');
-			
+			var section = $(this).data('for'), $section = $this.find( '#' + section );
+			$section.toggleClass('hidden');
 		});
 		
 	});
