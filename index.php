@@ -14,7 +14,7 @@
 	function make_row($field, $class = null) {
 		global $periods;
 	?>
-		<tr class="field">
+		<tr class="field <?php echo $class; ?>">
 			<td class="label">
 				<?php echo $field['label']; ?> <span class="description"><?php echo $field['description']; ?></span>
 			</td>
