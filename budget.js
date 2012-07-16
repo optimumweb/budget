@@ -62,6 +62,8 @@ function calcField($field) {
 	};
 	
 	this.calcAll = function() {
+		alert('calcAll!');
+		return this;
 		return this.refreshAmount().calcMonthlyTotal().calcPercentage();
 	};
 	
