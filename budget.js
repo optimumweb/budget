@@ -17,7 +17,10 @@ function sectionAnnualTotal($section) {
 
 function calcSectionAnnualTotal($section) {
 	
-	$section.find('.total').find('.annual-total').text( sectionAnnualTotal( $section ).toFixed(2) );
+	var sectionAnnualTotal = sectionAnnualTotal( $section ).toFixed(2);
+	var $sectionAnnualTotal = $section.find('.total').find('.annual-total');
+	
+	$sectionAnnualTotal.text( sectionAnnualTotal );
 	
 }
 
@@ -35,24 +38,23 @@ function calcAnnualTotal($field) {
 
 $(document).ready(function() {
 	
-	$('.field').each(function() {
+	var $field = $('.field');
+	
+	$field.each(function() {
 		
-		var $field = $(this);
+		var $this = $(this);
 		
-		calcAnnualTotal( $field );
+		calcAnnualTotal( $this );
 		
 	});
 	
-	$('.amount').focusout(function() {
+	$field.focusout(function() {
 		
 		var $this = $(this);
-		var $input = $this.find('input');
-		var $field = $this.parent('.field');
-		var $section = $field.parent('.section');
+		var $amount = $this.find('.amount'), amount = parseFloat( $input.val() );
+		var $section = $this.parent('.section');
 		
-		var amount = parseFloat( $input.val() );
-		
-		$input.val(  amount.toFixed(2) );
+		$amount.find('input').val(  amount.toFixed(2) );
 		
 		calcAnnualTotal( $field );
 		
