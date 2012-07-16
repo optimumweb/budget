@@ -18,8 +18,19 @@ body {
 	
 		tbody {
 			
+			tr.field {
+				&.odd { background: #f4f4f4; }
+				&.even { background: #eee; }
+			}
+			
 			td {
 				padding: 0.5em 1em;
+				
+				&.section-label {
+					color: #fff;
+					font-weight: bold;
+					background: #0f3c69;
+				}
 			}
 			
 		}

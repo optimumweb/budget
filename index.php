@@ -10,11 +10,14 @@
 		array( 'label' => "6 mois", 'value' => 2 ),
 		array( 'label' => "Ann&eacute;e", 'value' => 1 )
 	);
+	
+	$i = 0;
 
 	function make_row($field, $class = null) {
-		global $periods;
+		global $periods, $i;
+		$i++;
 	?>
-		<tr class="field <?php echo $class; ?>">
+		<tr class="field <?php echo $class; ?> <?php ( $i % 2 ) ? 'even' : 'odd'; ?>">
 			<td class="label">
 				<?php echo $field['label']; ?> <span class="description"><?php echo $field['description']; ?></span>
 			</td>
