@@ -46,7 +46,7 @@
 						array( 'label' => "Revenu net d'un travail autonome", 'description' => "", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Revenu d'appoint net", 'description' => "deuxi&egrave;me emploi, revenu secondaire", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Commissions", 'description' => "", 'amount' => 0, 'period' => 12 ),
-						array( 'label' => "Bonus", 'description' => "bonus et primes nets reçus dans le cadre d'un emploi", 'amount' => 0, 'period' => 12 ),
+						array( 'label' => "Bonus", 'description' => "bonus et primes nets re&ccedil;us dans le cadre d'un emploi", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Pourboires", 'description' => "", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Prestations gouvernementales", 'description' => "", 'amount' => 0, 'period' => 12 ),
 						array( 'label' => "Bourses", 'description' => "bourse d'&eacute;tude, bourse au rendement, etc.", 'amount' => 0, 'period' => 12 ),
