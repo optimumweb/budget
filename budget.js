@@ -37,7 +37,7 @@ $(document).ready(function() {
 		
 	});
 	
-	$('.amount input').blur(function() {
+	$('.amount').focusout(function() {
 		
 		var $this = $(this);
 		var $field = $this.parent('.field');
