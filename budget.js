@@ -84,7 +84,7 @@ jQuery.fn.budget = function() {
 		$sectionTitles.click(function(e) {
 			e.preventDefault();
 			var section = $(this).data('for'), $section = $this.find( '#' + section );
-			$section.toggle('slow');
+			$section.toggleClass('hidden');
 			$(this).toggleClass('collapsed');
 		});
 		
