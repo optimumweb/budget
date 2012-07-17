@@ -260,7 +260,7 @@
 						
 							<?php if ( $category['label'] ) : ?>
 								
-								<tr>
+								<tr class="category-title">
 									<td class="category-label" colspan="5">
 										<?php echo $category['label']; ?>
 									</td>

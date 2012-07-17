@@ -14,11 +14,16 @@ body {
 }
 
 #budget-table {
+	td, th {
+		padding: 0.25em 1em;
+	}
+	
+	tbody, thead {
+		display: block;
+	}
+
 	thead {
-		th, td {
-			padding: 0.25em 1em;
-			font-weight: bold;
-		}
+		font-weight: bold;
 	
 		th {
 			white-space: nowrap;
@@ -48,8 +53,8 @@ body {
 		}
 	}
 
-	.section {
-		tr.field {
+	.section tr {
+		&.field {
 			&.odd { background: #f6f6f6; }
 			&.even { background: #e6e6e6; }
 			
@@ -73,7 +78,7 @@ body {
 			}
 			
 			.amount input {
-				width: 60px;
+				width: 8em;
 				text-align: right;
 			}
 			
@@ -86,7 +91,15 @@ body {
 			}
 		}
 		
-		tr.total {
+		&.category-title {
+			background: #c6c6c6;
+			
+			td.category-label {
+				font-weight: bold;
+			}
+		}
+		
+		&.total {
 			font-weight: bold;
 			background: #f5ebb9;
 			
@@ -94,15 +107,5 @@ body {
 				text-align: right;
 			}
 		}
-		
-		td {
-			padding: 0.25em 1em;
-			
-			&.category-label {
-				font-weight: bold;
-				background: #c6c6c6;
-			}
-		}
-		
 	}
 }
