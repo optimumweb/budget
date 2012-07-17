@@ -255,46 +255,42 @@
 					</thead>
 					
 					<tbody id="<?php echo $section_key; ?>" class="section">
-					
-						<div class="container">
 
-							<?php foreach ( $section['categories'] as $category ) : ?>
-							
-								<?php if ( $category['label'] ) : ?>
-									
-									<tr class="category-title">
-										<td class="category-label" colspan="5">
-											<?php echo $category['label']; ?>
-										</td>
-									</tr>
-									
-									<?php foreach ( $category['fields'] as $field ) : ?>
-										
-										<?php make_row( $field, 'sub' ); ?>
-										
-									<?php endforeach; ?>
-									
-								<?php else : ?>
-									
-									<?php foreach ( $category['fields'] as $field ) : ?>
-										
-										<?php make_row( $field ); ?>
-										
-									<?php endforeach; ?>
-									
-								<?php endif; ?>
-								
-							<?php endforeach; ?>
-							
-							<tr class="total">
-								<td class="label">Total</td>
-								<td>&nbsp;</td>
-								<td>&nbsp;</td>
-								<td class="monthly-total">0.00</td>
-								<td>&nbsp;</td>
-							</tr>
+						<?php foreach ( $section['categories'] as $category ) : ?>
 						
-						</div>
+							<?php if ( $category['label'] ) : ?>
+								
+								<tr class="category-title">
+									<td class="category-label" colspan="5">
+										<?php echo $category['label']; ?>
+									</td>
+								</tr>
+								
+								<?php foreach ( $category['fields'] as $field ) : ?>
+									
+									<?php make_row( $field, 'sub' ); ?>
+									
+								<?php endforeach; ?>
+								
+							<?php else : ?>
+								
+								<?php foreach ( $category['fields'] as $field ) : ?>
+									
+									<?php make_row( $field ); ?>
+									
+								<?php endforeach; ?>
+								
+							<?php endif; ?>
+							
+						<?php endforeach; ?>
+						
+						<tr class="total">
+							<td class="label">Total</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td class="monthly-total">0.00</td>
+							<td>&nbsp;</td>
+						</tr>
 						
 					</tbody>
 					
