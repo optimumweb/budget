@@ -104,7 +104,7 @@ $budget_budget = array(
 				'fields' => array(
 					array( 'label' => __("Rentes", 'budget'), 'description' => __("viagères ou à échéance fixe", 'budget') ),
 					array( 'label' => __("Revenus de fonds enregistrés de revenu de retraite (FERR)", 'budget') ),
-					array( 'label' => __("Régime de pension agréé (caisse de retraite)", 'budget') ),
+					array( 'label' => __("Régime de pension agréé (caisse de retraite)", 'budget'), 'budget') ),
 					array( 'label' => __("Rente de retraite de la Régie des rentes du Québec (RRQ) ou du Régime de pensions du Canada (RPC)", 'budget') ),
 					array( 'label' => __("Prestation fiscale pour enfants", 'budget') ),
 					array( 'label' => __("Pension alimentaire", 'budget') ),
