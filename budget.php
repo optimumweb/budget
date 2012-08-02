@@ -237,7 +237,7 @@ $budget = array(
 
 function make_budget_table($atts)
 {
-	global $budget_budget;
+	global $budget;
 
 	wp_enqueue_style('budget', BUDGET_URL . 'css/budget.css');
 	wp_enqueue_script('budget', BUDGET_URL . 'js/budget.js', array('jquery'));
