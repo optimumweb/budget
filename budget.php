@@ -261,7 +261,11 @@ function make_budget_table($atts)
 
 			<thead data-for="<?php echo $section_key; ?>" class="section-title">
 				<tr>
-					<td class="section-label" colspan="5"><?php echo $section['label']; ?></td>
+					<td class="section-label"><?php echo $section['label']; ?></td>
+					<td class="empty">&nbsp;</td>
+					<td class="empty">&nbsp;</td>
+					<td class="monthly-total">0.00</td>
+					<td class="empty">&nbsp;</td>
 				</tr>
 			</thead>
 

@@ -9,8 +9,9 @@
 			$sections.each(function() {
 
 				var $section = $(this);
-				var $sectionTotal = $section.find('.total');
-				var $sectionMonthlyTotal = $sectionTotal.find('.monthly-total');
+				var $sectionTitle = $section.siblings('.section-title[data-for="' + $section.attr('id') + '"]');
+				var $sectionTotal = $sectionTitle.find('.monthly-total');
+				var $sectionMonthlyTotal = $section.find('.monthly-total');
 				var $sectionFields = $section.find('.field');
 
 				var sectionMonthlyTotal = 0;
@@ -36,6 +37,7 @@
 				});
 
 				// refresh section monthly total
+				$sectionTotal.text( sectionMonthlyTotal.toFixed(2) );
 				$sectionMonthlyTotal.text( sectionMonthlyTotal.toFixed(2) );
 
 				// refresh percentages
