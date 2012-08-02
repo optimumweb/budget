@@ -296,7 +296,7 @@ function make_budget_table($atts)
 				<?php endforeach; ?>
 
 				<tr class="total">
-					<td class="label"><?php __("Total", 'budget'); ?></td>
+					<td class="label"><?php _e("Total", 'budget'); ?></td>
 					<td>&nbsp;</td>
 					<td>&nbsp;</td>
 					<td class="monthly-total">0.00</td>
