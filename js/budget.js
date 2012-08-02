@@ -4,7 +4,10 @@
 
 		function budgetRefresh() {
 
-			var $sections = $('.section');
+			var $budgetTable = $('#budget-table');
+			var $sections = $budgetTable.find('.section');
+			var $summary = $budgetTable.find('.summary');
+			var $monthlyAvailable = $summary.find('.monthly-available');
 
 			$sections.each(function() {
 
@@ -59,6 +62,14 @@
 				});
 
 			});
+
+			var incomeTotal = parseFloat( $sections.filter('#income').find('tr.total td.monthly-total').text() );
+			var savingsTotal = parseFloat( $sections.filter('#savings').find('tr.total td.monthly-total').text() );
+			var spendingsTotal = parseFloat( $sections.filter('#spendings').find('tr.total td.monthly-total').text() );
+
+			var monthlyAvailable = incomeTotal - savingsTotal - spendingsTotal;
+
+			$monthlyAvailable.text( monthlyAvailable );
 
 		}
 
