@@ -232,7 +232,7 @@
 
 		<div id="budget-wrap">
 
-			<table id="budget-table" width="100%" cellpadding="5" cellspacing="0" border="0">
+			<table id="budget-table" width="100%" cellpadding="0" cellspacing="0" border="0">
 
 				<thead>
 
