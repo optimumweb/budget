@@ -4,9 +4,6 @@
 
 		function budgetRefresh() {
 
-			var start = new Date().getTime();
-			console.log('Refreshing...');
-
 			var $sections = $('.section');
 
 			$sections.each(function() {
@@ -61,19 +58,7 @@
 
 			});
 
-			var end = new Date().getTime();
-			var runtime = end - start;
-			console.log('Runtime: ' + runtime + 'ms');
-
 		}
-
-	})
-
-}(window.jQuery);
-
-!function ($) {
-
-	$(function () {
 
 		jQuery.fn.budget = function() {
 

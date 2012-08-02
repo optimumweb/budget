@@ -240,7 +240,7 @@ function make_budget_table($atts)
 	global $budget;
 
 	wp_enqueue_style('budget', BUDGET_URL . 'css/budget.css');
-	wp_enqueue_script('budget', BUDGET_URL . 'js/budget.js', array('jquery'));
+	wp_enqueue_script('budget', BUDGET_URL . 'js/budget.min.js', array('jquery'));
 
 ?>
 <div id="budget-wrap">
