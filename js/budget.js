@@ -11,7 +11,7 @@
 				var $section = $(this);
 				var $sectionTitle = $section.siblings('.section-title[data-for="' + $section.attr('id') + '"]');
 				var $sectionTotal = $sectionTitle.find('.monthly-total');
-				var $sectionMonthlyTotal = $section.find('.monthly-total');
+				var $sectionMonthlyTotal = $section.not('.field').find('.monthly-total');
 				var $sectionFields = $section.find('.field');
 
 				var sectionMonthlyTotal = 0;
