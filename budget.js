@@ -1,4 +1,4 @@
-function refresh() {
+function budgetRefresh() {
 
 	var start = new Date().getTime();
 	console.log('Refreshing...');
@@ -74,9 +74,9 @@ jQuery.fn.budget = function() {
 		var $fields = $this.find('.field');
 		var $inputs = $fields.find('input, select');
 		
-		refresh();
+		budgetRefresh();
 		
-		$inputs.bind('change', refresh);
+		$inputs.bind('change', budgetRefresh);
 		
 		$sectionTitles.addClass('collapsed').first().removeClass('collapsed');
 		$sections.addClass('hidden').first().removeClass('hidden');

@@ -11,20 +11,20 @@
 		array( 'label' => "6 mois", 'value' => '0.167' ),
 		array( 'label' => "Ann&eacute;e", 'value' => '0.083' )
 	);
-	
+
 	$i = 0;
 
 	function make_row($field, $class = null) {
-		
+
 		global $periods, $i;
-		
+
 		$field = array_merge( array(
 			'amount' => '0.00',
 			'period' => '1.000',
 			'monthly_total' => '0.00',
 			'percentage' => '0.0'
 		), $field );
-		
+
 	?>
 		<tr class="field <?php echo $class; ?> <?php echo ( $i++ % 2 == 0 ) ? 'even' : 'odd'; ?>">
 			<td class="label">
@@ -215,75 +215,75 @@
 <html>
 
 	<head>
-	
+
 		<title>Budget en ligne</title>
-		
-		<link rel='stylesheet' id='default-css' href='http://firecdn.net/libs/wpbp/css/default.css?ver=3.4.1' type='text/css' media='all' />
-		<link rel='stylesheet' id='budget-css' href='budget.css' type='text/css' media='all' />
-		
-		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=1.7.1'></script>
-		<script type='text/javascript' src='budget.js'></script>
-		
-		<script type='text/javascript'> $(document).ready(function() { $('#budget-table').budget(); }); </script>
-		
+
+		<link rel="stylesheet" href="http://firecdn.net/libs/default/default.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="budget.css" type="text/css" media="all" />
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=1.7.1"></script>
+		<script type="text/javascript" src="budget.js"></script>
+
+		<script type="text/javascript"> $(document).ready(function() { $('#budget-table').budget(); }); </script>
+
 	</head>
-	
+
 	<body>
-	
+
 		<div id="budget-wrap">
-	
+
 			<h1>Budget en ligne</h1>
-			
+
 			<table id="budget-table" width="100%" cellpadding="5" cellspacing="0" border="0">
-			
+
 				<thead>
-				
+
 					<th class="empty">&nbsp;</th>
 					<th>Montant</th>
 					<th>P&eacute;riode</th>
 					<th>Montant mensuel</th>
 					<th>Pourcentage</th>
-					
+
 				</thead>
-				
+
 				<?php foreach ( $budget as $section_key => $section ) : ?>
-					
+
 					<thead data-for="<?php echo $section_key; ?>" class="section-title">
 						<tr>
 							<td class="section-label" colspan="5"><?php echo $section['label']; ?></td>
 						</tr>
 					</thead>
-					
+
 					<tbody id="<?php echo $section_key; ?>" class="section">
 
 						<?php foreach ( $section['categories'] as $category ) : ?>
-						
+
 							<?php if ( $category['label'] ) : ?>
-								
+
 								<tr class="category-title">
 									<td class="category-label" colspan="5">
 										<?php echo $category['label']; ?>
 									</td>
 								</tr>
-								
+
 								<?php foreach ( $category['fields'] as $field ) : ?>
-									
+
 									<?php make_row( $field, 'sub' ); ?>
-									
+
 								<?php endforeach; ?>
-								
+
 							<?php else : ?>
-								
+
 								<?php foreach ( $category['fields'] as $field ) : ?>
-									
+
 									<?php make_row( $field ); ?>
-									
+
 								<?php endforeach; ?>
-								
+
 							<?php endif; ?>
-							
+
 						<?php endforeach; ?>
-						
+
 						<tr class="total">
 							<td class="label">Total</td>
 							<td>&nbsp;</td>
@@ -291,15 +291,15 @@
 							<td class="monthly-total">0.00</td>
 							<td>&nbsp;</td>
 						</tr>
-						
+
 					</tbody>
-					
+
 				<?php endforeach; ?>
-				
+
 			</table>
-		
+
 		</div>
-		
+
 	</body>
-	
+
 </html>
