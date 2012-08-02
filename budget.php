@@ -249,11 +249,11 @@ function make_budget_table($atts)
 
 		<thead>
 
-			<th class="empty">&nbsp;</th>
-			<th><?php _e("Montant", 'budget'); ?></th>
-			<th><?php _e("Période", 'budget'); ?></th>
-			<th><?php _e("Montant mensuel", 'budget'); ?></th>
-			<th><?php _e("Pourcentage", 'budget'); ?></th>
+			<th width="50%" class="empty">&nbsp;</th>
+			<th width="12.5%"><?php _e("Montant", 'budget'); ?></th>
+			<th width="12.5%"><?php _e("Période", 'budget'); ?></th>
+			<th width="12.5%"><?php _e("Montant mensuel", 'budget'); ?></th>
+			<th width="12.5%"><?php _e("Pourcentage", 'budget'); ?></th>
 
 		</thead>
 
