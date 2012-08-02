@@ -42,7 +42,7 @@ $i = 0;
 
 function make_row($field, $class = null) {
 
-	global $periods, $i;
+	global $budget_periods, $i;
 
 	$field = array_merge( array(
 		'amount' => '0.00',
