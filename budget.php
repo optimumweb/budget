@@ -250,10 +250,10 @@ function make_budget_table($atts)
 		<thead>
 
 			<th class="empty">&nbsp;</th>
-			<th><?php __("Montant", 'budget'); ?></th>
-			<th><?php __("Période", 'budget'); ?></th>
-			<th><?php __("Montant mensuel", 'budget'); ?></th>
-			<th><?php __("Pourcentage", 'budget'); ?></th>
+			<th><?php _e("Montant", 'budget'); ?></th>
+			<th><?php _e("Période", 'budget'); ?></th>
+			<th><?php _e("Montant mensuel", 'budget'); ?></th>
+			<th><?php _e("Pourcentage", 'budget'); ?></th>
 
 		</thead>
 
