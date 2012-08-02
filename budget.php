@@ -309,6 +309,14 @@ function make_budget_table($atts)
 
 			</tbody>
 
+			<tr class="summary">
+				<td class="label"><?php _e("Montant disponible mensuellement", 'budget'); ?></td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td class="monthly-available">0.00</td>
+				<td>&nbsp;</td>
+			</tr>
+
 		<?php endforeach; ?>
 
 	</table>
