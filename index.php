@@ -232,8 +232,6 @@
 
 		<div id="budget-wrap">
 
-			<h1>Budget en ligne</h1>
-
 			<table id="budget-table" width="100%" cellpadding="5" cellspacing="0" border="0">
 
 				<thead>

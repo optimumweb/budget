@@ -4,36 +4,29 @@ body {
 	margin: 2em;
 }
 
-#budget-wrap {
-	width: 960px;
-	margin: 0 auto;
-	
-	h1 {
-		text-align: center;
-	}
-}
-
 #budget-table {
+	width: 100%;
+
 	td, th {
 		padding: 0.25em 1em;
 	}
 
 	thead {
 		font-weight: bold;
-	
+
 		th {
 			white-space: nowrap;
 			background: #dcf0c8;
-			
+
 			&.empty { background: none; }
 		}
-		
+
 		&.section-title {
 			cursor: pointer;
 			color: #fff;
 			text-transform: uppercase;
 			background-color: #0f3c69;
-		
+
 			.section-label {
 				font-size: 1.1em;
 				line-height: 30px;
@@ -42,7 +35,7 @@ body {
 				background-repeat: no-repeat;
 				background-image: url(collapse.png);
 			}
-			
+
 			&.collapsed .section-label {
 				background-image: url(expand.png);
 			}
@@ -53,17 +46,17 @@ body {
 		&.field {
 			&.odd { background: #f6f6f6; }
 			&.even { background: #e6e6e6; }
-			
+
 			&:hover { background: #d7e6f0; }
-			
+
 			&.sub td.label {
 				padding-left: 2em;
 				font-weight: normal;
 			}
-			
+
 			.label {
 				font-weight: bold;
-			
+
 				.description {
 					display: block;
 					font-size: 0.85em;
@@ -72,33 +65,33 @@ body {
 					color: #555;
 				}
 			}
-			
+
 			.amount input {
 				width: 8em;
 				text-align: right;
 			}
-			
+
 			.monthly-total {
 				text-align: right;
 			}
-			
+
 			.percentage {
 				text-align: right;
 			}
 		}
-		
+
 		&.category-title {
 			background: #c6c6c6;
-			
+
 			td.category-label {
 				font-weight: bold;
 			}
 		}
-		
+
 		&.total {
 			font-weight: bold;
 			background: #f5ebb9;
-			
+
 			.monthly-total {
 				text-align: right;
 			}
