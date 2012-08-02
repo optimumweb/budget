@@ -77,7 +77,7 @@ function make_row($field, $class = null) {
 	</tr>
 <?php }
 
-$budget_budget = array(
+$budget = array(
 	'income' => array(
 		'label' => __("Revenus", 'budget'),
 		'categories' => array(
@@ -257,7 +257,7 @@ function make_budget_table($atts)
 
 		</thead>
 
-		<?php foreach ( $budget_budget as $section_key => $section ) : ?>
+		<?php foreach ( $budget as $section_key => $section ) : ?>
 
 			<thead data-for="<?php echo $section_key; ?>" class="section-title">
 				<tr>
