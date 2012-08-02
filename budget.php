@@ -190,7 +190,7 @@ $budget_budget = array(
 				)
 			),
 			array(
-				'label' => "Santé", 'budget'),
+				'label' => __("Santé", 'budget'),
 				'fields' => array(
 					array( 'label' => __("Soins de santé", 'budget'), 'description' => __("soins médicaux, paramédicaux et dentaires, achat de lunettes, etc.", 'budget') ),
 					array( 'label' => __("Pharmacie", 'budget'), 'description' => __("achat de médicaments etc.", 'budget') )
