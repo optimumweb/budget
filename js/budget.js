@@ -69,7 +69,7 @@
 
 			var monthlyAvailable = incomeTotal - savingsTotal - spendingsTotal;
 
-			$monthlyAvailable.text( monthlyAvailable );
+			$monthlyAvailable.text( monthlyAvailable.toFixed(2) );
 
 		}
 
